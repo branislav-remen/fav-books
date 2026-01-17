@@ -9,6 +9,7 @@ export default defineConfig([
   globalIgnores(['dist']),
   {
     files: ['**/*.{ts,tsx}'],
+    ignores: ['**/coverage/**'],
     extends: [
       js.configs.recommended,
       tseslint.configs.recommended,
