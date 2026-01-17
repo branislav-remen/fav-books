@@ -31,7 +31,7 @@ type AddBookFormFields = z.infer<typeof addBookSchema>;
 export const AddBookForm = () => {
     const dispatch = useDispatch();
     const [imagePreview, setImagePreview] = useState<string | null>(null);
-    const { register, handleSubmit, reset, formState: { errors }, trigger, clearErrors } = useForm<AddBookFormFields>({
+    const { register, handleSubmit, reset, formState: { errors } } = useForm<AddBookFormFields>({
         resolver: zodResolver(addBookSchema),
         mode: "onChange",
         defaultValues: {
@@ -61,13 +61,8 @@ export const AddBookForm = () => {
             reader.onloadend = () => {
                 // Set preview to base64 string
                 setImagePreview(reader.result as string);
-                // Clear error after valid image is loaded
-                clearErrors("image");
             };
             reader.readAsDataURL(file);
-        } else {
-            // If no file selected, trigger validation to show error
-            trigger("image");
         }
     };
 
