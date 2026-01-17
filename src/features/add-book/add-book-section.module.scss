@@ -1,0 +1,12 @@
+.section {
+   background-color: var(--background-grey);
+   width: 100%;
+   padding: var(--spacing-mobile);
+
+  // breakpoint hardcoded for this demo example
+  @media (min-width: 900px) {
+      padding: var(--spacing-desktop);
+      height: 100vh;
+      position: sticky;
+  }
+}

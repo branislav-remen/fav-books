@@ -1,0 +1,13 @@
+.section {
+    //background-color: var(--background-grey);
+    //height: 100vh;
+    width: 100%;
+    padding: var(--spacing-mobile);
+
+   // breakpoint hardcoded for this demo example
+   @media (min-width: 900px) {
+       padding: var(--spacing-desktop);
+     overflow-y: auto; /* only this column scrolls */
+     height: 100vh;
+   }
+}
