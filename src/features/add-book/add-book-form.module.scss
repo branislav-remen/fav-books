@@ -7,3 +7,32 @@
   border: 1px solid lightgray;
   border-radius: 4px;
 }
+
+.imageInput {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 16px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &.error {
+    border: 1px solid #d32f2f;
+  }
+}
+
+.imagePreview {
+  max-width: 100%;
+  max-height: 200px;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+// increase specificity to override MUI Typography styles
+.errorMessage.errorMessage {
+  color: #d32f2f;
+  font-size: 0.75rem;
+  margin-left: 12px;
+}
+
