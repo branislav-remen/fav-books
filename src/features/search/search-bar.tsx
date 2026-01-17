@@ -4,9 +4,17 @@ import SearchIcon from '@mui/icons-material/Search';
 import InputAdornment from '@mui/material/InputAdornment';
 import {useSelector} from "react-redux";
 import {getAllTitles} from "../../store/selectors.ts";
+import type {FC} from "react";
 
-/** search section with the input field to filter books by title */
-export const SearchBar = () => {
+type Props = {
+    /** contains the current value of the search input */
+    value: string;
+    /** callback function to handle changes in the search input */
+    onChange: (value: string) => void;
+}
+
+/** search section with the controlled input field  */
+export const SearchBar: FC<Props> = ({ value, onChange }) => {
 
     const titles = useSelector(getAllTitles);
 
@@ -15,6 +23,8 @@ export const SearchBar = () => {
             <Autocomplete
                 freeSolo
                 options={titles}
+                value={value}
+                onInputChange={(_, newInputValue) => onChange(newInputValue)}
                 renderInput={
                 (params) => (
                     <>

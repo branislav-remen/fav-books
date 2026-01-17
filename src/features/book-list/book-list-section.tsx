@@ -1,7 +1,7 @@
 import styles from './book-list-section.module.scss';
 import clsx from "clsx";
 import {EmptyState} from "../../components/empty-state/empty-state.tsx";
-import {BookListPage} from "./book-list.tsx";
+import {BookList} from "./book-list.tsx";
 import {useSelector} from "react-redux";
 import { hasBooks as hasBooksSelector } from "../../store/selectors.ts";
 
@@ -15,7 +15,7 @@ export const BookListSection = () => {
 
     return (
         <div className={clsx(styles.section)}>
-            { hasBooks ? <BookListPage /> : <EmptyState /> }
+            { hasBooks ? <BookList /> : <EmptyState /> }
         </div>
     );
 };
