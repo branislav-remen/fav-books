@@ -10,7 +10,7 @@ const FALLBACK_IMAGE = "https://placehold.co/150x250?text=Bez+obrazka";
 /** Single card component */
 export const BookCard: FC<Book> = (props) => {
 
-    const { title, image } = props;
+    const { title, image, author } = props;
 
     const [imgSrc, setImgSrc] = useState(image);
 
@@ -26,7 +26,7 @@ export const BookCard: FC<Book> = (props) => {
             />
             <CardContent>
                 <Typography variant="subtitle1">
-                    {title}
+                    {title}  ({author})
                 </Typography>
             </CardContent>
         </Card>
