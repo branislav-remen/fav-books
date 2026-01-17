@@ -3,7 +3,7 @@
 Simple web application to manage favourite books.  Using React, Typescript, Redux (legacy), SASS and React hook form.
 It took me around 6 hours to implement the basic features, without spending too much time on design and optimizations.
 
-![FavBooks Screenshot](./public/screenshot.png)
+![FavBooks Screenshot](./docs/screenshot.png)
 
 ## Disclaimer & Notes
 
@@ -33,3 +33,4 @@ It took me around 6 hours to implement the basic features, without spending too 
 - add ARIA labels and improve accessibility (e.g. Modal)
 - add additional features (e.g. edit book, delete book, pagination/infinite scroll, sort books)
 - improve error handling (e.g. error boundary, toast notifications)
+- keep only the fonts that are used in the project

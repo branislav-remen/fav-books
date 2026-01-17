@@ -24,7 +24,12 @@ export const BookList = () => {
     return (
         <Box gap={4}>
             <SearchBar value={searchTerm} onChange={setSearchTerm} />
-            <CardView books={filteredBooks} />
+            {filteredBooks.length === 0 && (
+                <Box>Nenašli sa žiadne knihy. Skús hľadať niečo iné.</Box>
+            )}
+            {filteredBooks.length > 0 && (
+                <CardView books={filteredBooks} />
+            )}
         </Box>
     );
 };
