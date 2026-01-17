@@ -1,7 +1,9 @@
 # FavBooks - A Favorite Books Management App
 
 Simple web application to manage favourite books.
+
 Using React, Typescript, Redux (legacy), SASS and React hook form.
+
 Github Copilot was used to help with: 
 - writing comments
 - commit messages
@@ -26,3 +28,4 @@ Github Copilot was used to help with:
 - create theme and move hardcoded values there 
 - move code from App to "pages" folder if more pages are added
 - add tests (Jest, React Testing Library, Playwright)
+- migrate to Redux Toolkit
