@@ -1,0 +1,70 @@
+.modalBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(90vw, 420px);
+  max-height: 90vh;
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  outline: none;
+}
+
+.closeButton.closeButton {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.subtitle {
+  display: block;
+  text-align: center;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.modalImage {
+  max-width: 100%;
+  max-height: 260px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.labelValue {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.label {
+  font-weight: 500;
+  color: #555;
+}
+
+.value {
+  color: #222;
+}
+
+.sectionTitle {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.description {
+  color: #444;
+  line-height: 1.6;
+}
