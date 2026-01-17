@@ -2,6 +2,9 @@
 
 Simple web application to manage favourite books.
 Using React, Typescript, Redux (legacy), SASS and React hook form.
+Github Copilot was used to help with: 
+- writing comments
+- commit messages
 
 ## Disclaimer
 
@@ -13,7 +16,7 @@ Using React, Typescript, Redux (legacy), SASS and React hook form.
 
 - [x] Implement simple UI (responsive; using sass and components library)
 - [x] Implement Redux store to save books (simple data)
-- [ ] Implement Form to save new book with validations (simple data)
+- [x] Implement Form to save new book with validations (simple data)
 - [ ] Add support for image upload
 - [ ] Implement detail view for book (in modal window)
 - [ ] Implement search feature
