@@ -12,7 +12,7 @@ Using React, Typescript, Redux (legacy), SASS and React hook form.
 ## TODO:
 
 - [x] Implement simple UI (responsive; using sass and components library)
-- [ ] Implement Redux store to save books (simple data)
+- [x] Implement Redux store to save books (simple data)
 - [ ] Implement Form to save new book with validations (simple data)
 - [ ] Add support for image upload
 - [ ] Implement detail view for book (in modal window)

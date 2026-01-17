@@ -3,18 +3,14 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-
-type Props = {
-    // todo: tbd
-    image: string;
-    // book title
-    title: string;
-}
+import type {Book} from "../../store/interfaces.ts";
 
 const FALLBACK_IMAGE = "https://placehold.co/150x250?text=Bez+obrazka";
 
 /** Single card component */
-export const BookCard: FC<Props> = ({image, title}) => {
+export const BookCard: FC<Book> = (props) => {
+
+    const { title, image } = props;
 
     const [imgSrc, setImgSrc] = useState(image);
 
@@ -29,7 +25,7 @@ export const BookCard: FC<Props> = ({image, title}) => {
                 onError={() => setImgSrc(FALLBACK_IMAGE)}
             />
             <CardContent>
-                <Typography variant="subtitle1" noWrap>
+                <Typography variant="subtitle1">
                     {title}
                 </Typography>
             </CardContent>
