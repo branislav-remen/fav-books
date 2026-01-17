@@ -1,8 +1,9 @@
 # FavBooks - A Favorite Books Management App
 
 Simple web application to manage favourite books.  Using React, Typescript, Redux (legacy), SASS and React hook form.
-
 It took me around 6 hours to implement the basic features, without spending too much time on design and optimizations.
+
+![FavBooks Screenshot](./public/screenshot.png)
 
 ## Disclaimer & Notes
 
@@ -20,6 +21,7 @@ It took me around 6 hours to implement the basic features, without spending too 
 - [x] Add support for image upload
 - [x] Implement detail view for book (in modal window)
 - [x] Implement search feature
+- [x] BONUS - vitest configured and `card-view` module covered by test using AI agent  
 
 ## Nice to have (future improvement, features not mentioned in web app description):
 - add PostCSS, Autoprefixer
