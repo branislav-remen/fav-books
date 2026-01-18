@@ -110,8 +110,9 @@ export const AddBookForm = () => {
                 <input
                     type="file"
                     accept="image/*"
-                    {...register("image")}
-                    onChange={handleImageChange}
+                    {...register("image", {
+                        onChange: handleImageChange
+                    })}
                     className={clsx(styles.imageInput, errors.image && styles.error)}
                 />
                 {errors.image && (
