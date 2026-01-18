@@ -23,7 +23,7 @@ It took me around 6-7 hours to implement the basic features, without spending to
 - [x] Implement search feature
 - [x] BONUS - vitest configured and `card-view` module covered by test using AI agent  
 
-## Nice to have (future improvement, features not mentioned in web app description):
+## Nice to have (future improvement, features not mentioned in web app description, ...):
 - add PostCSS, Autoprefixer
 - create theme and move there all hardcoded css variables (e.g. colors, sizing, breakpoints)
 - move code from App to "pages" folder if more pages are added
@@ -34,3 +34,4 @@ It took me around 6-7 hours to implement the basic features, without spending to
 - add additional features (e.g. edit book, delete book, pagination/infinite scroll, sort books)
 - improve error handling (e.g. error boundary, toast notifications)
 - keep only the fonts that are used in the project
+- move form component to separate file with proper styling (if used on multiple places)
